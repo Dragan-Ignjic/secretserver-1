@@ -3,6 +3,10 @@ This solution will replicate the Personal Folders option in Secret Server with a
 
 ---
 # Prerequisites 
+**WinRM Enabled on Distributed Engine or Webserver used to execute script**
+
+The script will be executed from a powershell runspace bty the engine worker process for the site it is assocaited to. This could be on the webservers or distributed engines depending on your configuration. [Docs Link](https://docs.delinea.com/secrets/current/api-scripting/configuring-winrm-powershell/index.md)
+This script does not use CredSSP so there is no need to enable or configure it for this script. 
 
 **The [Thycotic.SecretServer](https://github.com/thycotic-ps/thycotic.secretserver) PowerShell module**
 
